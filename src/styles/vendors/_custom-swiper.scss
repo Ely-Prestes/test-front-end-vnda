@@ -1,0 +1,23 @@
+@import "~swiper/swiper.scss";
+@import "~swiper/components/navigation/navigation.scss";
+
+:root {
+    --swiper-theme-color: #272727 !important;
+    --swiper-navigation-size: 1rem !important
+}
+
+
+.swiper-wrapper {
+    .swiper-slide:last-child {
+        margin-right: 60px !important;
+    }
+}
+
+@media(min-width: 1200px) {
+    .custom-swiper {
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+}

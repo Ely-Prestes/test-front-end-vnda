@@ -1,0 +1,34 @@
+@import 'vendors/vendors';
+@import 'base/base';
+
+html {
+    font-size: 70%;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+}

@@ -1,0 +1,111 @@
+
+footer {
+    margin-top: 10rem;
+    border-top: solid #272727 1.5px;
+    .top-footer {
+        width: 7rem;
+        background-color: #ffffff;
+        font-size: 2rem;
+        margin: -1rem auto 0;
+
+        .box-logo-footer {
+            background-color: #ffffff;
+            
+        }
+    }
+    .menu-footer {
+        
+        a {
+            border-bottom: solid 1px #27272700;
+
+            color: #272727;
+            transition: all linear .3s;
+            i {
+                font-size: 1.5rem;
+            }
+            &:hover {
+                border-color: #272727fd;
+            }
+            &:visited {
+                color: #272727;
+            }
+
+
+        }
+    }
+    .menu-email {
+        .form-email {
+            padding-bottom: .6rem;
+            margin-top: 4rem;
+            border-bottom: solid 1px #27272796;
+            input {
+                width: 80%;
+                border: none;
+                font-size: .8rem;
+                outline: none;
+                &::placeholder {
+                    color: #272727ad;
+                }
+            }
+            button {
+                text-transform: uppercase;
+                border: none;
+                background-color: transparent;
+                font-size: .8rem;
+                color: #272727;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .menu-social {
+        text-align: end;
+        
+        a {
+            border-bottom: solid 1px #27272700;
+
+            color: #272727;
+            transition: all linear .3s;
+            i {
+                font-size: 1.5rem;
+                color: #272727d2;
+            }
+            &:hover {
+                border-color: #272727fd;
+            }
+            &:visited {
+                color: #272727;
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .main-footer {
+        .menu-footer {
+            margin: auto;
+            width: 50%;
+        }
+
+        .menu-social {
+            flex-basis: 100%;
+            text-align: center;
+        }
+        
+
+    }
+}
+
+@media (max-width: 576px) {
+    .main-footer {
+        flex-direction: column;
+        .menu-footer{
+            margin: auto !important;
+            text-align: center !important;
+        }
+    }
+}
